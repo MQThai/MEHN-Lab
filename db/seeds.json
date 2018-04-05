@@ -1,0 +1,20 @@
+[
+  {
+    "url":"fakeurl.com",
+    "title":"title",
+    "description":"description",
+    "postDate":20180405
+  },
+  {
+    "url":"realurl.com",
+    "title":"name",
+    "description":"summary",
+    "postDate":20180406
+  },
+  {
+    "url":"oneurl.com",
+    "title":"something",
+    "description":"info",
+    "postDate":20180407
+  }
+]
