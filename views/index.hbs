@@ -5,8 +5,8 @@
 <ul>
   {{#each links}}
     <li>
-    <a href="/links/{{this.id}}"> {{this.title}} {{this.description}} {{this.url}}</a> 
-     <a href="/links/edit/{{this.id}}">Edit</a>
+    <a href="/links/{{this.id}}"> {{this.title}} </a> 
+     <a class="button" href="/links/edit/{{this.id}}">Edit</a>
     </li>
   {{/each}}
 </ul>
@@ -14,4 +14,4 @@
 
 
 
-     
+     {{!-- {{this.description}} {{this.url}} --}}
