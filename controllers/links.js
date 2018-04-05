@@ -13,6 +13,13 @@ router.post('/', (req, res) => {
     })
 })
 
+router.get('/edit/:id', (req, res) => {
+  Links.findOne({_id: req.params.id})
+    .then(link => {
+      res.render('edit', {link})
+    })
+})
+
 router.get('/new', (req, res) => {
   res.render('new')
 })
