@@ -5,8 +5,10 @@ const methodOverride = require('method-override')
 
 const app = express()
 
+app.use('/assets', express.static('public'))
 app.use(methodOverride('_method'))
 app.use(parser.urlencoded({extended: true}))
+
 const linksController = require('./controllers/links')
 
 app.set('view engine', 'hbs')
