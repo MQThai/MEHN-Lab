@@ -36,7 +36,7 @@ router.get('/:id', (req, res) => {
     .then(link => res.render('show', {link}))
 })
 
-router.delete(':id', (req, res) => {
+router.delete('/:id', (req, res) => {
   Links.findOneAndRemove({_id: req.params.id})
     .then(() => {
       res.redirect('/')
