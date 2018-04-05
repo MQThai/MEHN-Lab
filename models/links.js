@@ -4,7 +4,7 @@ const LinksSchema = new mongoose.Schema({
   url: String,
   title: String,
   description: String,
-  postDate: Number
+  postDate: Date
 })
 
 const Links = mongoose.model('Links', LinksSchema)

@@ -3,13 +3,13 @@
 <ul>
   {{#each links}}
     <li>
-    <a href="{{this.id}}"> {{this.title}} {{this.description}} {{this.url}}</a> 
-     <a href="edit/{{this.id}}">Edit</a>
+    <a href="/links/{{this.id}}"> {{this.title}} {{this.description}} {{this.url}}</a> 
+     <a href="/links/edit/{{this.id}}">Edit</a>
     </li>
   {{/each}}
 </ul>
 
-<a href="/new">New Article</a>
+<a href="/links/new">New Article</a>
 
 
      

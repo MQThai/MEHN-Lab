@@ -1,20 +1,20 @@
 [
   {
-    "url":"fakeurl.com",
+    "url":"https://fakeurl.com",
     "title":"title",
     "description":"description",
-    "postDate":20180405
+    "postDate":"Thu Apr 05 2018 12:24:00 GMT-0400 (EDT)"
   },
   {
-    "url":"realurl.com",
+    "url":"https://realurl.com",
     "title":"name",
     "description":"summary",
-    "postDate":20180406
+    "postDate":"Thu Apr 06 2018 12:24:00 GMT-0400 (EDT)"
   },
   {
-    "url":"oneurl.com",
+    "url":"https://oneurl.com",
     "title":"something",
     "description":"info",
-    "postDate":20180407
+    "postDate":"Thu Apr 07 2018 12:24:00 GMT-0400 (EDT)"
   }
 ]

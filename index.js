@@ -10,7 +10,9 @@ app.use(parser.urlencoded({extended: true}))
 const linksController = require('./controllers/links')
 
 app.set('view engine', 'hbs')
-
-app.use('/', linksController)
+app.get('/', (req, res) => {
+  res.redirect('/links')
+})
+app.use('/links', linksController)
 
 app.listen(3000, () => console.log('Running on port 3000!'))

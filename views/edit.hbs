@@ -1,6 +1,6 @@
 <h2>Edit item:</h2>
 
-<form action="/{{link.id}}?_method=put" method="post">
+<form action="/links/{{link.id}}?_method=put" method="post">
   <p>
     Title:  <input type="text" name="title" value="{{ link.title }}"/><br>
     URL: <input type="text" name="url" value="{{ link.url }}"/><br>
@@ -9,6 +9,6 @@
   <input type="submit" value="Update"/>
 </form>
 
-<form action="/{{ link.id }}?_method=delete" method="post">
+<form action="/links/{{ link.id }}?_method=delete" method="post">
   <input type="submit" value="Remove">
 </form>
