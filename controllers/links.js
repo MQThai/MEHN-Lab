@@ -7,6 +7,7 @@ router.get('/', (req, res) => {
 })
 
 router.post('/', (req, res) => {
+  req.body.postDate = new Date()
   Links.create(req.body)
     .then(link => {
       res.redirect('/')

@@ -13,6 +13,7 @@ h1 {
   margin: 0 auto;
   position: relative;
   margin-bottom: 60px;
+  margin-top: 30px;
 }
 
 h2 {
@@ -25,7 +26,7 @@ label {
 }
 
 .description {
-  width: 160px;
+  width: 250px;
   height: 80px;
   text-align: top;
 }

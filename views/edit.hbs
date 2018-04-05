@@ -2,8 +2,8 @@
 
 <form action="/links/{{link.id}}?_method=put" method="post">
   <p class="inputs">
-    <label>Title:</label><br>  <input type="text" name="title" value="{{ link.title }}"/><br>
-    <label>URL:</label><br> <input type="text" name="url" value="{{ link.url }}"/><br>
+    <label>Title:</label><br>  <input type="text" name="title" size="40" value="{{ link.title }}"/><br>
+    <label>URL:</label><br> <input type="text" name="url" size="40" value="{{ link.url }}"/><br>
     <label>Description:</label><br> <textarea class="description" type="text" name="description" ">{{ link.description }}</textarea><br>
   </p>
   <input class="inputs" type="submit" value="Update"/>
