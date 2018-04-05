@@ -4,6 +4,8 @@ const parser = require('body-parser')
 const methodOverride = require('method-override')
 
 const app = express()
+const fixDate = require('handlebars-intl')
+fixDate.registerWith(hbs)
 
 app.use('/assets', express.static('public'))
 app.use(methodOverride('_method'))
