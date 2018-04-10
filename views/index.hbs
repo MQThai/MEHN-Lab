@@ -1,5 +1,16 @@
 <h1>LinkHub</h1>
 
+<div>
+  <ul>
+    {{#if currentUser}}
+    <li><a href='/logout'>Logout {{currentUser.local.email}}</a></li>
+    {{else}}
+    <li><a href="/login">Login</a></li>
+    <li><a href="/signup">Signup</a></li>
+    {{/if}}
+  </ul>
+</div>
+
 <a class="post" href="/links/new">Click to post new article</a>
 
 <ul>

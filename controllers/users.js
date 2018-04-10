@@ -37,16 +37,8 @@ router.post('/login', (req, res) => {
 })
 
 router.get('/logout', (req, res) => {
-  res.logout()
+  req.logout()
   res.redirect('/')
-})
-
-router.get('/secret', (req, res) => {
-  if (req.isAuthenticated()) {
-    res.render('secret')
-  } else {
-    res.redirect('/')
-  }
 })
 
 module.exports = router
