@@ -1,6 +1,9 @@
 const express = require('express')
 const router = express.Router()
 const Links = require('../models/links')
+const bodyParser = require('body-parser')
+const methodOverride = require('method-override')
+const passport = require('passport')
 
 router.get('/', (req, res) => {
   Links.find({}).then(links => res.render('index', {links}))
