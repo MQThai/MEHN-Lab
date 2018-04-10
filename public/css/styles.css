@@ -45,6 +45,17 @@ a {
   color: white;
 }
 
+.user {
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  margin: -40px 0 40px 0;
+}
+.user > a {
+  padding-right: 5px;
+  
+}
+
 .inputs {
   margin: 20px 0px 0px 60px;
   padding: 4px;
@@ -68,4 +79,15 @@ li {
 p {
   line-height: 40px;
   margin-left: 30px;
+}
+
+.alert {
+  background: rgba(255, 0, 0, 0.4);
+  border: 2px solid red;
+  color: white;
+  text-align: center;
+  width: 30%;
+  margin: 0 auto;
+  padding: 2px 0 2px 0;
+  border-radius: 5px;
 }
